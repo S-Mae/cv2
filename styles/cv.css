@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav a {
+    padding: 14px 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Aside section styling */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,0.2); 
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+.top-row {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+
+/* Active slide will be visible */
+.top-row {
+    display: block;
+    animation: slide-in 1s ease-in-out forwards;
+}
+
+/* Keyframes for smooth transitions */
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #171c18;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+
+.container {
+    display: flex;
+    margin-block: 5px;
+}
+
+.left-column {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.right-column {
+    
+    width: 70%;
+}
+
+.top-row, .bottom-row {
+    padding-block: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Increase the height of the images in the top row */
+.top-row img {
+   
+    width: 340px;
+    height: 350px; /* Adjust the value to your desired height */
+    object-fit: cover; /* This ensures the image fills the container */
+}
+
+
+video, iframe {
+    width: 340px;
+    height: 350px;
+            }
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+nav img {
+    width: 4cap;
+    height: 40px;
+    border-radius: 100%;
+    
+}
+aside {
+
+    border-radius: 8px;
+}
+
+.container1 {
+    display: flex;
+    margin-block: 2px;
+    justify-content: space-between;
+}
+
+.social-links {
+    justify-content: center;
+}
+
